@@ -4,7 +4,7 @@ const path = require("path");
 const server = express();
 
 // Serve static files from the React app
-server.use(express.static(path.join(__dirname, "client/build")));
+server.use(express.static(path.join(__dirname + "/../client/build")));
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
